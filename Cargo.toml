@@ -1,0 +1,17 @@
+[package]
+name = "shared-lock"
+version = "0.1.0"
+edition = "2024"
+description = "A lock that protects multiple objects at once."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mahkoh/shared-lock"
+keywords = ["lock", "mutex", "thread", "reentrant"]
+categories = ["concurrency"]
+rust-version = "1.85"
+
+[dependencies]
+parking_lot = { version = "0.12.4", default-features = false }
+opera = { version = "1.0.1", default-features = false }
+static_assertions = { version = "1.1.0", default-features = false }
+run-on-drop = { version = "1.0.0", default-features = false }
+debug-fn = { version = "1.0.0", default-features = false }
